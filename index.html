@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Samiha <3</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom right, #ff9a9e, #fad0c4);
+            font-family: 'Arial', sans-serif;
+        }
+        .message-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 350px;
+            height: 150px;
+            background: linear-gradient(45deg, #fbc2eb, #a6c1ee);
+            border-radius: 25px;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .message-box:hover {
+            transform: scale(1.1);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="message-box" onclick="navigateToFlowersPage()">
+        Hi Samiha <3 These flowers are for you
+    </div>
+
+    <script>
+        function navigateToFlowersPage() {
+            window.location.href = "./flowers.html"; // Redirect to the flower page
+        }
+    </script>
+</body>
+</html>
